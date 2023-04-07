@@ -1,6 +1,8 @@
 import React from "react";
 import './App.css';
 import Profile from "./profile/Profile";
+import Photo from "/Users/mac/Desktop/GoMyCode/checkpoints/Checkpoint_Props/checkpointprops/src/Salem.jpg";
+
 
 function App() {
   const fullName = "Salem Hammami"
@@ -61,7 +63,11 @@ function App() {
 
   return (
     <div>
-    <Profile fullName={fullName} bio={bio} profession={profession} handleName={handleName} myStyle={myStyle} myStyle2={myStyle2} myStyle3={myStyle3}  buttonStyle={buttonStyle} imgStyle ={imgStyle}> </Profile>
+    <Profile fullName={fullName} bio={bio} profession={profession} handleName={handleName} myStyle={myStyle} myStyle2={myStyle2} myStyle3={myStyle3}  buttonStyle={buttonStyle} imgStyle ={imgStyle}> 
+    
+    <img src={Photo} alt='ProfileImage' style={imgStyle}/>
+    
+    </Profile>
     </div>
     
   );
